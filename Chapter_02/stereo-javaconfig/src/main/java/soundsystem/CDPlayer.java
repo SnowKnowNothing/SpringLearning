@@ -4,8 +4,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class CDPlayer implements MediaPlayer {
   private CompactDisc cd;
 
-  @Autowired
+ /* @Autowired
   public CDPlayer(CompactDisc cd) {
+    this.cd = cd;
+  }*/
+
+  public void setCd(CompactDisc cd) {
     this.cd = cd;
   }
 
